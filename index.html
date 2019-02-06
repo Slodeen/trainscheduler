@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Scheduler</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/train.css">   
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script> 
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+
+        <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                 <h3 class="display-10"> <i class="fas fa-train"> </i>ANYTIME IS TRAIN TIME</h3>
+                  <p class="lead">Choo Choo. Chee Chee.</p>
+                  <div class="clock"></div>
+                </div>
+        </div>
+        <div class="brd">
+        <nav class="navbar" style="background-color: rgb(6, 38, 49)">
+        <span class="navbar-brand mb-0 h1">Current Train Schedule</span>
+        </nav>
+        </div>
+        
+        
+        <div id="tble">
+          <p>
+                <table class="table table-hover" id="allTable">
+                        <thead>
+                                <tr>
+                                <th scope="col">Train Name</th>
+                                <th scope="col">Destination</th>
+                                <th scope="col">Frequency (min)</th>
+                                <th scope="col">Next Arrival</th>
+                                <th scope="col">Minutes Away</th>
+                                </tr>
+                        </thead>
+                <tbody>
+                       
+                </tbody>
+                </table>
+         </p>
+        </div>
+
+       <br>
+           <div class="row">
+                        <div class="col-md-12">
+                          <!-- Add Train  -->
+                          <div class="card mb-4">
+                            <div class="card-header", style="background-color: lightblue"><h4>Add Train</h4></div>
+                            <div class="card-body">
+                           <!-- Entry Form -->
+                              <form>
+                                <div class="form-group">
+                                  <label for="employee-name-input">Train Name</label>
+                                  <input class="form-control" id="trainName" placeholder="Amtrack" type="text">
+                                </div>
+                                <div class="form-group">
+                                  <label for="role-input">Destination</label>
+                                  <input class="form-control" id="destination" placeholder="New York" type="text">
+                                </div>
+                                <div class="form-group">
+                                  <label for="start-input">First Train Time (HH:mm - military time)</label>
+                                  <input class="form-control" id="time" placeholder="10:00" type="text">
+                                </div>
+                                <div class="form-group">
+                                  <label for="rate-input">Frequency (min)</label>
+                                  <input class="form-control" id="frequency" placeholder="20" type="text">
+                                </div>
+                                <button class="btn btn-primary float-right" id="addTrain">Submit</button>
+                              </form>
+                  
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  
+                      
+                      
+</div>
+<script src="assets/js/trainscheduler.js"></script>
+
+</body>
+</html>

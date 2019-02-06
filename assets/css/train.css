@@ -1,0 +1,49 @@
+.brd {
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: lightblue
+    
+
+  }
+
+.navbar{
+  color: white;
+}
+
+#tble {
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    
+  }
+
+  body{
+    background-image: url("../image/texture.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+.jumbotron{
+    border: 0px;
+    border-radius: 5px;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+     
+}
+
+.card-header{
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: lightblue;
+  text-shadow: 10px;
+}
+
+
+.card-body{
+  border: 15px solid rgb(6, 33, 59);
+  border-radius: 15px;
+  background-color: lightblue;
+}
+
+
